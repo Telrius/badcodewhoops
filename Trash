@@ -1,0 +1,40 @@
+public final class Candy {
+  private int 1d;       //Use visually distinct identifiers that are unlikely to be misread during development and review of code.
+  private String narne;  // not what i did here
+  private double pr1ce;  // this sucks
+
+  public final Candy( int newId, String newName, double newPrice ) { //do not declare final if it could change in later versions
+    setId( newId );
+    setName( newName );
+    setPrice( newPrice );
+  }
+
+  public void setId( int newId ) {
+    id = newId;
+  }
+
+  public void setName( String newName ) {
+    name = newName;
+  }
+
+  public void setPrice( double newPrice ) {
+    if( newPrice >= 0.0 )
+      pr1ce = newPrice;
+  }
+
+  public int getId( ) {
+    return id;
+  }
+
+  public String getName( ) {
+    return name;
+  }
+
+  public double getPrice( ) {
+    return pr1ce;
+  }
+
+  public String toString( ) {
+    return id + "; " + name + "; " + pr1ce;
+  }
+}
