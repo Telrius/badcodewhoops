@@ -1,0 +1,13 @@
+
+public final class CandyButton extends Button { //dont use final on builds that might be updated
+  private Candy candy;
+
+  public CandyButton( Context context, Candy newCandy ) {
+    super( context );
+    candy = newCandy;
+  }
+
+  public double getPrice( ) {
+    return candy.getPrice( );
+  }
+}
