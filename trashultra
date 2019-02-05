@@ -6,6 +6,9 @@ public final class CandyButton extends Button { //dont use final on builds that 
     super( context );
     candy = newCandy;
   }
+  
+  //Cody Fraker
+  //newCandy isn't private, can be modified outside from memory whereas candy shouldn't be able to.
 
   public double getPrice( ) {
     return candy.getPrice( );

@@ -3,12 +3,18 @@ public final class Candy {
   private String narne;  // not what i did here
   private double pr1ce;  // this sucks
 
+  
+  //Cody Fraker
+  // No data sanitation for the Candie's name.
   public final Candy( int newId, String newName, double newPrice ) { //do not declare final if it could change in later versions
     setId( newId );
     setName( newName );
     setPrice( newPrice );
   }
 
+  
+  //Cody Fraker
+  // Ensure that compound operations on shared variables are atomic
   public void setId( int newId ) {
     id = newId;
   }
